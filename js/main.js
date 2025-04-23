@@ -80,4 +80,29 @@ document.addEventListener("DOMContentLoaded", function () {
     $('.type-phone input').mask("+7 (999) 999-99-99");
 });
 
+$(function() {
+    $('#scroll_bottom').click(function() {
+        $('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 600);
+        return false;
+    });
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+            $('#scroll_top').show();
+        } else {
+            $('#scroll_top').hide();
+        }
+    });
 
+    $('#scroll_top').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+
+    $('.btn_list_open').on('click', function(){
+        if($('.list_items_map').hasClass('opened')){
+            $('.list_items_map').removeClass('opened')
+        } else {
+            $('.list_items_map').addClass('opened')
+        }
+    });
+});

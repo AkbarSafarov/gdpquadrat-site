@@ -674,3 +674,84 @@ h1.h1_title {
         }
     }
 }
+
+#scroll_bottom {
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    z-index: 900;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+#scroll_top {
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+    z-index: 900;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+#scroll_top:hover {
+    opacity: 1;
+}
+
+#infrastruktura *,#invest_form * {
+    font-family: var(--font-family);
+}
+
+#infrastruktura .pro_ins_wr .part_list_title span {
+    white-space: nowrap;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+@media all and (max-width: 767px) {
+    #infrastruktura .part4 .part4_item_wrap {
+        padding: 20px;
+    }
+}
+
+.btn_list_open {
+    cursor: pointer;
+    position: relative;
+    padding: 24px 21px;
+    background: #F5F5F5;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    color: #020018;
+    font-family: var(--font-family);
+    margin-bottom: 60px;
+
+    @media all and (min-width: 992px) {
+        display: none;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        width: 34px;
+        height: 34px;
+        background: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.2284 12.3164L16.8951 21.6622L7.56176 12.3164' stroke='black' stroke-width='1.5' /%3E%3C/svg%3E") 50% no-repeat;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .list_items_map {
+        display: none;
+
+        &.opened {
+            display: block;
+        }
+    }
+}
