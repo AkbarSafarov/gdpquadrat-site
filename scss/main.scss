@@ -28,6 +28,10 @@ h1.h1_title {
 
 .map_wrap_title {
 
+    *{
+        font-family: var(--font-family);
+    }
+
     @media all and (min-width: 768px) {
         display: block;
 
@@ -35,6 +39,10 @@ h1.h1_title {
             display: none;
         }
     }
+}
+
+.map_wrap li {
+    font-family: var(--font-family);
 }
 
 .map_wrap .map_title_items {
@@ -47,6 +55,10 @@ h1.h1_title {
 .list_items {
     padding-top: 1px;
     margin-bottom: 50px;
+
+    * {
+        font-family: var(--font-family);
+    }
 
     .title {
         font-weight: 300;
@@ -262,6 +274,10 @@ h1.h1_title {
     position: relative;
     padding-bottom: 100px;
 
+    *{
+        font-family: var(--font-family);
+    }
+
     .swiper_arrow_btn-prev {
         position: absolute;
         top: 0;
@@ -359,6 +375,11 @@ h1.h1_title {
     font-size: 24px;
     line-height: 158%;
     color: #212529;
+    font-family: var(--font-family);
+
+    *{
+        font-family: var(--font-family);
+    }
 
     p {
         margin: 0 0 16px;
@@ -450,6 +471,10 @@ h1.h1_title {
 .accor_block_wr {
     padding-top: 100px;
     padding-bottom: 100px;
+
+    * {
+        font-family: var(--font-family);
+    }
 
     @media all and (max-width: 1024px) {
         padding-top: 60px;
@@ -562,6 +587,10 @@ h1.h1_title {
     overflow: auto;
     text-align: center;
     -webkit-overflow-scrolling: touch;
+
+    * {
+        font-family: var(--font-family);
+    }
 
     &:after {
         display: inline-block;
