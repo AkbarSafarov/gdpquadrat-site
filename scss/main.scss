@@ -772,6 +772,14 @@ h1.h1_title {
         height: 34px;
         background: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.2284 12.3164L16.8951 21.6622L7.56176 12.3164' stroke='black' stroke-width='1.5' /%3E%3C/svg%3E") 50% no-repeat;
         margin: auto;
+        transition: all .3s;
+        transform: rotate(0deg);
+    }
+
+    &.active {
+        &:before {
+            transform: rotate(180deg);
+        }
     }
 }
 

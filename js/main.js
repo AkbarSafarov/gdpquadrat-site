@@ -100,9 +100,11 @@ $(function() {
 
     $('.btn_list_open').on('click', function(){
         if($('.list_items_map').hasClass('opened')){
-            $('.list_items_map').removeClass('opened')
+            $('.list_items_map').removeClass('opened');
+            $(this).removeClass('active')
         } else {
-            $('.list_items_map').addClass('opened')
+            $('.list_items_map').addClass('opened');
+            $(this).addClass('active');
         }
     });
 });
